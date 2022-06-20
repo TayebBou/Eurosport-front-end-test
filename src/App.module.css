@@ -11,6 +11,7 @@
 h1 {
   color: white;
   text-align: center;
+  animation: Appear 700ms ease-out;
 }
 
 .ball {
@@ -18,6 +19,7 @@ h1 {
   margin: 0 auto;
   padding: 3em;
   width: 6em;
+  animation: rotation 5s infinite linear;
 }
 
 .player {
@@ -25,6 +27,7 @@ h1 {
   display: flex;
   background-color: #ffffff80;
   flex-wrap: wrap;
+  animation: Appear 700ms ease-out;
 }
 
 .country-img{
@@ -64,5 +67,30 @@ h1 {
   .stats{
     text-align: center;
     margin-left: 1em;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes Appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 100;
+    transform: scale(1);
   }
 }
