@@ -20,7 +20,7 @@ h1 {
   margin: 0 auto;
   padding: 3em;
   width: 6em;
-  animation: rotation 20s infinite linear;
+  animation: rotation 20s 700ms infinite linear, Appear 700ms ease-out;
 }
 
 .player {
