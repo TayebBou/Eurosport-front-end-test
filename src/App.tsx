@@ -14,8 +14,6 @@ const App:FC =() => {
         setPlayers(res.data.data.players)
       })
   },[])
-
-  console.log(players);
   
   return (
     <>
