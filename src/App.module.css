@@ -12,6 +12,7 @@ h1 {
   color: white;
   text-align: center;
   animation: Appear 700ms ease-out;
+  margin-top: 0;
 }
 
 .ball {
@@ -19,7 +20,7 @@ h1 {
   margin: 0 auto;
   padding: 3em;
   width: 6em;
-  animation: rotation 5s infinite linear;
+  animation: rotation 20s 700ms infinite linear, Appear 700ms ease-out;
 }
 
 .player {
@@ -28,15 +29,21 @@ h1 {
   background-color: #ffffff80;
   flex-wrap: wrap;
   animation: Appear 700ms ease-out;
+  transition: transform 0.5s;
 }
 
-.country-img{
+.player:hover {
+  transform: scale(1.05);
+}
+
+.country-img {
   width: 4em;
   margin-right: 1em;
 }
 
-.player-img{
-  width: 10em;
+.player-img {
+  width: 7em;
+  height: 9em;
 }
 
 .h2 {
@@ -48,23 +55,23 @@ h1 {
   margin-right: 2em;
 }
 
-.h1-player{
+.h1-player {
   color: black;
   text-align: left;
 }
 
 @media (max-width: 812px) {
-  .player-img{
+  .player-img {
     display: block;
     margin: auto;
   }
-  .h1-player{
+  .h1-player {
     text-align: center;
   }
-  .player{
+  .player {
     text-align: center;
   }
-  .stats{
+  .stats {
     text-align: center;
     margin-left: 1em;
   }

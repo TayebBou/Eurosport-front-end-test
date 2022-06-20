@@ -18,4 +18,6 @@ export interface IPlayer {
     height: number
     age: number
   }
+  wins: number
+  loss: number
 }
