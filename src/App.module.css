@@ -4,7 +4,7 @@
   width: 100%;
   position: fixed;
   z-index: -5;
-  background-position: 82% 54%;
+  background-position: 48% 54%;
   background-size: cover;
 }
 
@@ -18,4 +18,51 @@ h1 {
   margin: 0 auto;
   padding: 3em;
   width: 6em;
+}
+
+.player {
+  margin: 4em;
+  display: flex;
+  background-color: #ffffff80;
+  flex-wrap: wrap;
+}
+
+.country-img{
+  width: 4em;
+  margin-right: 1em;
+}
+
+.player-img{
+  width: 10em;
+}
+
+.h2 {
+  display: inline-block;
+}
+
+.h3 {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.h1-player{
+  color: black;
+  text-align: left;
+}
+
+@media (max-width: 812px) {
+  .player-img{
+    display: block;
+    margin: auto;
+  }
+  .h1-player{
+    text-align: center;
+  }
+  .player{
+    text-align: center;
+  }
+  .stats{
+    text-align: center;
+    margin-left: 1em;
+  }
 }
