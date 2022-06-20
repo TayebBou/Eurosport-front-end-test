@@ -12,6 +12,7 @@ h1 {
   color: white;
   text-align: center;
   animation: Appear 700ms ease-out;
+  margin-top: 0;
 }
 
 .ball {
@@ -19,7 +20,7 @@ h1 {
   margin: 0 auto;
   padding: 3em;
   width: 6em;
-  animation: rotation 5s infinite linear;
+  animation: rotation 20s infinite linear;
 }
 
 .player {
@@ -28,6 +29,11 @@ h1 {
   background-color: #ffffff80;
   flex-wrap: wrap;
   animation: Appear 700ms ease-out;
+  transition: transform .5s;
+}
+
+.player:hover{
+  transform: scale(1.05);
 }
 
 .country-img{
@@ -36,7 +42,7 @@ h1 {
 }
 
 .player-img{
-  width: 10em;
+  width: 12em;
 }
 
 .h2 {
